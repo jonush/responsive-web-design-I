@@ -1,3 +1,316 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+* {
+    box-sizing: border-box;
+    /* border: 1px solid grey; */
+}
 
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
 
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* -------NAV------- */
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.links {
+	display: flex;
+	justify-content: center;
+	width: 40%;
+}
+
+.links a{
+	text-decoration: none;
+	color: grey;
+	line-height: 60px;
+	display: flex;
+	justify-content: flex-start;
+	width: 20%;
+}
+
+nav a:hover {
+	color: rgb(10, 65, 245);
+}
+
+.logo {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 10%;
+}
+
+/* -------HEADER------- */
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 3%;
+	padding-bottom: 3%
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 28%;
+}
+
+h1 {
+	font-size: 80px;
+	text-align: center;
+	justify-content: center;
+}
+
+button {
+	width: 25%;
+	padding: 1%;
+	text-align: center;
+	background-color: transparent;
+	border: 2px solid #000000;
+	font-size: 16px;
+	justify-content: center;
+}
+
+button:hover {
+	background: rgb(35, 149, 255);
+	color: #FFFFFF;
+}
+
+.circle-image {
+	display: flex;
+	justify-content: center;
+	width: 25%;
+}
+
+/* -------CONTENT------- */
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.content-top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content-bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+h3 {
+	font-family: 'Bangers', cursive;
+	font-size: 20px;
+}
+
+p {
+	font-family: 'Sen', sans-serif;
+	line-height: 1.3;
+}
+
+#features {
+	width: 24%;
+	margin-right: 1%;
+}
+
+#about {
+	width: 24%;
+}
+
+.middle-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 55%;
+	padding: 2% 2% 2% 3%;
+}
+
+#services {
+	width: 16%;
+	margin-right: .5%;
+}
+
+#products {
+	width: 16%;
+	margin-right: .5%;
+}
+
+#vision {
+	width: 16%;
+}
+
+hr {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+/* -------CONTACT------- */
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 25.5%;
+}
+
+.contact p {
+	line-height: 5px;
+}
+
+#address {
+	margin-bottom: -5px;
+}
+
+/* -------FOOTER------- */
+footer {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding-top: 3%;
+	padding-bottom: 2%;
+}
+
+/* -------MEDIA QUERIES------- */
+/* ---TABLET--- */
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo {
+        width: 25%;
+        padding-top: 4%;
+        padding-bottom: 3%;
+        justify-content: center;
+    }
+    .links {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .links a{
+        color: grey;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .circle-image {
+        display: none;
+    }
+    .title {
+        margin-top: -5%;
+    }
+    button {
+        width: 80%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        margin-bottom: 10%;
+    }
+    hr {
+        width: 94%;
+    }
+    .content-top {
+        width: 96%;
+        justify-content: space-evenly;
+    }
+    #features {
+        width: 48%;
+        margin-right: 0;
+    }
+    #about {
+        width: 48%;
+    }
+    .middle-img {
+        width: 100%;
+    }
+    .content-bottom {
+        justify-content: space-evenly;
+    }
+    #services {
+        width: 28%;
+    }
+    #products {
+        width: 28%;
+    }
+    #vision {
+        width: 28%;
+    }
+    .contact {
+        display: flex;
+        padding-left: 4%;
+    }
+}
+
+/* ---PHONE--- */
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .links {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .links a{ 
+        width: 96%;
+        justify-content: center;
+        color: grey;
+        border-top: 1px solid grey;
+    }
+    #contact-line{
+        border-bottom: 1px solid grey;
+    }
+    .logo {
+        width: 30%;
+    }
+    .title {
+        width: 100%;
+    }
+    button {
+        width: 40%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    .content-top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #features {
+        width: 100%;
+    }
+    #about {
+        width: 100%;
+    }
+    .content-bottom {
+        width: 96%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+    #services {
+        width: 100%;
+    }
+    #products {
+        width: 100%;
+    }
+    #vision {
+        width: 100%;
+    }
+}
